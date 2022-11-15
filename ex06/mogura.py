@@ -6,7 +6,7 @@ import time
 from threading import Thread
 
 # タイマー時間を設定
-TIME = 60
+TIME = 5
 
 
 class Screen:
@@ -218,7 +218,7 @@ def bgm(bgm_num): #C0B21049
         pg.mixer.music.stop()
         sound = pg.mixer.Sound("fig/whistle.mp3")
         sound.play(0)
-        sound.set_volume(100)
+        sound.set_volume(1.0)
               
 def main():
     # スクリーン
